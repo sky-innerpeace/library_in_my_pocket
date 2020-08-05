@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- marginBottom 속성값 변경 -->
+    <!-- Image 변경해야 함-->
+
+    <!--수평선 긋기-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/menu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="메뉴" />
+
+            <ImageButton
+                android:id="@+id/btn_mainLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/ic_launcher_background" />
+
+            <Button
+                android:id="@+id/bookRegistration"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="도서 등록" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#F7878787" />
+
+                <TextView
+                    android:id="@+id/recommendedBooks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="추천 도서"
+                    android:textSize="24sp" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+
+                    <HorizontalScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/recommendedBooks_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:text="1" />
+
+                            <Button
+                                android:id="@+id/recommendedBooks_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:text="2" />
+
+                            <Button
+                                android:id="@+id/recommendedBooks_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:text="3" />
+
+                            <Button
+                                android:id="@+id/recommendedBooks_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:text="4" />
+
+                            <Button
+                                android:id="@+id/recommendedBooks_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:text="5" />
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+                </ScrollView>
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#F7878787" />
+
+                <TextView
+                    android:id="@+id/customizedBooks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="사용자 추천도서"
+                    android:textSize="24sp" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+
+                    <HorizontalScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/customizedBooks_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:layout_weight="1"
+                                android:text="1" />
+
+                            <Button
+                                android:id="@+id/customizedBooks-2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:layout_weight="1"
+                                android:text="2" />
+
+                            <Button
+                                android:id="@+id/customizedBooks_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:layout_weight="1"
+                                android:text="3" />
+
+                            <Button
+                                android:id="@+id/customizedBooks_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:layout_weight="1"
+                                android:text="4" />
+
+                            <Button
+                                android:id="@+id/customizedBooks_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:layout_weight="1"
+                                android:text="5" />
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+                </ScrollView>
+
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#F7878787" />
+
+                <TextView
+                    android:id="@+id/categoryBooks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="카테고리별 도서"
+                    android:textSize="24sp" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/categoryBooks_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="500dp"
+                                android:text="1" />
+
+                            <Button
+                                android:id="@+id/categoryBooks_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:text="2" />
+
+                            <Button
+                                android:id="@+id/categoryBooks_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:layout_weight="1"
+                                android:text="3" />
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </ScrollView>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <include layout="@layout/activity_menu" />
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".Marathon"
+    android:layout_margin="20dp">
+
+    <TextView
+        android:id="@+id/tv_marathontitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="▼독서 진행 상황"
+        android:textSize="36sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ProgressBar
+                android:id="@+id/pb_readbook"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_weight="50"
+                android:background="#00FFFFFF"
+                android:foregroundGravity="center"
+                tools:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/btn_bookimg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="책 사진 넣어야되는데 안들어감" />
+
+
+                <TextView
+                    android:id="@+id/tv_booktitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="책제목" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_weekbook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="주간 독서 현황"
+                android:textSize="20sp" />
+
+            <ProgressBar
+                android:id="@+id/pb_weekbook"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:id="@+id/tv_monthbook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="월간 독서 현황"
+                android:textSize="20sp" />
+
+            <ProgressBar
+                android:id="@+id/pb_monthbook"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

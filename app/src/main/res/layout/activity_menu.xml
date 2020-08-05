@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer"
+    android:layout_width="240dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_menuLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:text="내 손 안의 작은 서재"
+        android:textSize="24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#B2FFFFFF"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#F7878787" />
+
+        <Button
+            android:id="@+id/btn_myInfo"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:background="#FFFFFF"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="5dp"
+            android:text="내 정보" />
+
+        <Button
+            android:id="@+id/btn_settings"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:background="#FFFFFF"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="5dp"
+            android:text="설정" />
+
+        <Button
+            android:id="@+id/btn_statistics"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:background="#FFFFFF"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="5dp"
+            android:text="통계" />
+
+        <Button
+            android:id="@+id/btn_aroundLibrary"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:background="#FFFFFF"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="5dp"
+            android:text="주변 서점" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#F7878787" />
+
+        <TextView
+            android:id="@+id/tv_sns"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="5dp"
+            android:text="SNS"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btn_humanities_philosophy"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:background="#FFFFFF"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="5dp"
+            android:text="인문&amp;철학 마니아 게시판" />
+
+        <Button
+            android:id="@+id/btn_novel"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:background="#FFFFFF"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="5dp"
+            android:text="소설 마니아 게시판" />
+
+        <Button
+            android:id="@+id/self-develop"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:background="#FFFFFF"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="5dp"
+            android:text="자기계발 도서 마니아 게시판" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#F7878787" />
+
+    </LinearLayout>
+
+</LinearLayout>
