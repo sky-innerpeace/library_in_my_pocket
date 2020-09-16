@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "641659799686",
+    "firebase_url": "https://pocketlibrary-35910.firebaseio.com",
+    "project_id": "pocketlibrary-35910",
+    "storage_bucket": "pocketlibrary-35910.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:641659799686:android:85dceb3fb303c0fec62907",
+        "android_client_info": {
+          "package_name": "org.techtown.home"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "641659799686-nhgqn2p1l93q9jimcil091vffud46alt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCT9vF3BTVa5ymZcseU8bIo2vfryQkZ0Ws"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "641659799686-nhgqn2p1l93q9jimcil091vffud46alt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

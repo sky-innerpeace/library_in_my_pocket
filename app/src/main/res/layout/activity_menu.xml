@@ -41,14 +41,6 @@
             android:paddingLeft="5dp"
             android:text="내 정보" />
 
-        <Button
-            android:id="@+id/btn_settings"
-            android:layout_width="match_parent"
-            android:layout_height="31dp"
-            android:background="#FFFFFF"
-            android:gravity="left|center_vertical"
-            android:paddingLeft="5dp"
-            android:text="설정" />
 
         <Button
             android:id="@+id/btn_statistics"
@@ -92,7 +84,7 @@
             android:background="#FFFFFF"
             android:gravity="left|center_vertical"
             android:paddingLeft="5dp"
-            android:text="인문&amp;철학 마니아 게시판" />
+            android:text="(임시) 나만의 서재" />
 
         <Button
             android:id="@+id/btn_novel"
@@ -101,16 +93,8 @@
             android:background="#FFFFFF"
             android:gravity="left|center_vertical"
             android:paddingLeft="5dp"
-            android:text="소설 마니아 게시판" />
+            android:text="SNS 게시판" />
 
-        <Button
-            android:id="@+id/self-develop"
-            android:layout_width="match_parent"
-            android:layout_height="31dp"
-            android:background="#FFFFFF"
-            android:gravity="left|center_vertical"
-            android:paddingLeft="5dp"
-            android:text="자기계발 도서 마니아 게시판" />
 
         <View
             android:id="@+id/view3"
@@ -119,6 +103,15 @@
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
             android:background="#F7878787" />
+
+        <Button
+            android:id="@+id/btn_logOut"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:background="#FFFFFF"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="5dp"
+            android:text="로그아웃" />
 
     </LinearLayout>
 

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:adjustViewBounds="true"
+                android:backgroundTint="#FFFFF9"
+                android:maxHeight="100dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_unsettled_book" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="left"
+                    android:padding="7dp"
+                    android:text="책제목"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/author"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:text="저자"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/publisher"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_margin="5dp"
+                    android:paddingLeft="10dp"
+                    android:text="출판사"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

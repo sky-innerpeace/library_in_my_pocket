@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    tools:context=".activity.EditProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:text="회원정보 수정"
+        android:textColor="#121111"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_account_circle_black_24dp" />
+
+    <EditText
+        android:id="@+id/profileFullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginBottom="5dp"
+        android:hint="닉네임"/>
+
+    <EditText
+        android:id="@+id/profileEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginBottom="5dp"
+        android:hint="이메일"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editgoal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginBottom="5dp"
+        android:hint="목표 독서량"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/saveProfileInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="저장" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

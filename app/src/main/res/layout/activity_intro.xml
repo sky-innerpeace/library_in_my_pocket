@@ -4,21 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D7DDFF"
-    tools:context=".Intro">
+    android:background="#977E68"
+    android:orientation="vertical"
+    tools:context=".activity.IntroActivity">
 
-    <TextView
-        android:id="@+id/textView"
+
+    <ImageView
+        android:id="@+id/image"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="내 손 안의 작은 서재"
-        android:textColor="#333333"
-        android:textSize="40sp"
-        android:textStyle="bold"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+
+        android:adjustViewBounds="true"
+
+        android:scaleType="fitCenter"
+        android:src="@drawable/mainintro"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.283" />
+        app:layout_constraintVertical_bias="0.5" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
